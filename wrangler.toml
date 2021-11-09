@@ -1,0 +1,15 @@
+name = "trigger-deploy-hook"
+type = "javascript"
+
+account_id = "d0adfeb37288652e07d8ffdf88635a00"
+workers_dev = true
+
+compatibility_date = "2021-11-09"
+
+[triggers]
+crons = ["0 */2 * * *"]
+
+[env.production]
+workers_dev = false
+route = "https://gaushadhi.com/trigger-deploy-hook"
+zone_id = "c7cc8a6f6d115448de8d29bfc41a7b43"
